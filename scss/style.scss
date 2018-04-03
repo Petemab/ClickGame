@@ -1,0 +1,159 @@
+
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+@import "bulma/bulma.scss";
+
+
+// * {
+//   border: red solid 1px;
+// }
+
+html{
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-image: url(../images/cosmos.jpg);
+
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  // background-color: green;
+}
+
+.left {
+  width: 100px;
+  .timer p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    .countdown{
+    font-size: 50px;
+    }
+  }
+
+
+  .difficulty p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  .difficulty button {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    color: white;
+    padding-top: 9px;
+    border: white, solid, 5px;
+    box-shadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 9px;
+  border: black, solid, 5px;
+  box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  background-color: rgba(244, 244, 244, 0.2);
+
+
+  font-weight: bold;
+}
+
+.right {
+  width: 100px;
+  // background-color: blue;
+}
+
+.hole {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  // background-color: red;
+  margin: 25px;
+  background: radial-gradient(circle at 50px 50px, #f72904, #000);
+}
+
+.highlightedHole {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  // background-color: orange;
+  margin: 25px;
+  background: radial-gradient(circle at 50px 50px, #eef948, #000);
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align:center;
+  line-height:200px;
+  width:100%;
+  height:200px
+}
+
+p {
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}
+
+.scoreboard{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  p:nth-child(odd){
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+  }
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 20px;
+  // background-color: purple;
+}
+
+
+
+
+
+@keyframes shake {
+10%, 90% {
+  transform: translate3d(-1px, 0, 0);
+}
+
+20%, 80% {
+  transform: translate3d(2px, 0, 0);
+}
+
+30%, 50%, 70% {
+  transform: translate3d(-4px, 0, 0);
+}
+
+40%, 60% {
+  transform: translate3d(4px, 0, 0);
+}
+}

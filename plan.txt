@@ -1,0 +1,32 @@
+
+
+Style:
+ banner with game title
+ 2 x asides
+ Right aside with timer and score
+ Left aside with image
+ footer: name etc.
+
+ javascript
+
+function to start the Game (start button)
+
+then
+
+function for countdown (10 seconds - triggered by start game button)DONE
+
+function for randomly selecting circles to highlight (triggered by start game button)DONE
+
+function to find a random amount of time between circles highlighting(triggered by start game button)Done
+
+function to time how long circle is highlighted (triggered by start button) Done
+
+function for recording success (ie has the circle been clicked?) - scoreboard + 1 HALF  DONE
+
+function to add to score DONE
+
+function to reset the game DONE
+
+Adding levels
+
+Pop up to choose 1 or two players

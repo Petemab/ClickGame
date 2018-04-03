@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pete's Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <link rel="stylesheet" href="scss/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/css/style.css">
+  </head>
+  <body>
+<header>
+  <h1>Shooty Spaceballs</h1>
+</header>
+
+<main class="columns">
+  <aside class="left column is-one-fifth">
+    <div class="timer">
+      <p>Time: <span class="countdown">15</span></p>
+    </div>
+    <div class="difficulty">
+      <p>Choose your difficulty level:</p>
+      <button id="easy" type="button" name="easy">Easy</button>
+      <button id="medium" type="button" name="button">Medium</button>
+      <button id="insane" type="button" name="button">Insane</button>
+    </div>
+  </aside>
+  <div class="game columns is-multiline is-three-fifths">
+    <div class="hole 1"></div>
+    <div class="hole 2"></div>
+    <div class="hole 3"></div>
+    <div class="hole 4"></div>
+    <div class="hole 5"></div>
+    <div class="hole 6"></div>
+    <div class="hole 7"></div>
+    <div class="hole 8"></div>
+    <div class="hole 9"></div>
+    <div class="hole 10"></div>
+    <div class="hole 11"></div>
+    <div class="hole 12"></div>
+    <div class="hole 13"></div>
+    <div class="hole 14"></div>
+    <div class="hole 15"></div>
+    <div class="hole 16"></div>
+    <div class="hole 17"></div>
+    <div class="hole 18"></div>
+    <div class="hole 19"></div>
+    <div class="hole 20"></div>
+  </div>
+  <aside class="right column is-one-fifth">
+    <button class="startButton" type="button" name="start">START</button>
+    <div class="scoreboard">
+      <p>Player 1 Score:</p>
+      <p id="scoreP1">0</p>
+      <p>Player 2 Score:</p>
+      <p id="scoreP2">0</p>
+    </div>
+    <button type="button" class="resetBtn">RESET GAME</button>
+
+  </aside>
+
+
+</main>
+<footer>
+</footer>
+
+  </body>
+</html>
