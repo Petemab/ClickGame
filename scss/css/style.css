@@ -6475,7 +6475,7 @@ header {
       color: #000;
       text-decoration: none;
       cursor: pointer; }
-    #howModal .modal-content .modal-header {
+    #howModal .modal-content .modal-content h2 {
       font-size: 50px;
       font-family: 'Orbitron', sans-serif;
       color: black;
