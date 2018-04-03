@@ -6475,12 +6475,12 @@ header {
       color: #000;
       text-decoration: none;
       cursor: pointer; }
-    #howModal .modal-content .modal-content h2 {
+    #howModal .modal-content .modal-header {
       font-size: 50px;
       font-family: 'Orbitron', sans-serif;
       color: black;
       text-align: center; }
-    #howModal .modal-content .modal-content p {
+    #howModal .modal-content .modal-words {
       font-size: 25px;
       font-family: 'Orbitron', sans-serif;
       color: black; }

@@ -25,7 +25,7 @@ $(function(){
   const $howToPlay = $('#howToPlay');
   const $close = $('.close');
 
-
+  //pop up insruction screen
   $howToPlay.on('click', function(){
     $howModal.css('display', 'block');
   });
@@ -33,13 +33,12 @@ $(function(){
   $close.on('click', function(){
     $howModal.css('display', 'none');
   });
-
-
+  //Start button
   $startButton.on('click', function(){
     startGame();
   });
 
-
+  //levels
   $easy.on('click', function(){
     difficulty = 'easy';
     console.log(difficulty);
@@ -59,7 +58,7 @@ $(function(){
       timeRemaining--;
       console.log(timeRemaining);
       $timer.text(timeRemaining);
-      if(timeRemaining <= 0){
+      if(timeRemaining === 0){
         console.log('Stop counting down now please');
         clearInterval(countdown);
         gameStarted = false;
