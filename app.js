@@ -9,7 +9,7 @@ $(function(){
   const $medium = $('#medium');
   const $insane = $('#insane');
   const $startButton = $('.startButton');
-  const $highlightedHole = $('.highlightedHole');
+  // const $highlightedHole = $('.highlightedHole');
   const $resetBtn = $('.resetBtn');
   const $timer = $('.countdown');
   let timeUp = false;
@@ -18,9 +18,21 @@ $(function(){
   let difficulty = '';
   let timeRemaining = 15;
   let time;
+  let gameStarted = false;
   // let timerValue = null;
   // let timeIsRunning = false;
+  const $howModal = $('#howModal');
+  const $howToPlay = $('#howToPlay');
+  const $close = $('.close');
 
+
+  $howToPlay.on('click', function(){
+    $howModal.css('display', 'block');
+  });
+
+  $close.on('click', function(){
+    $howModal.css('display', 'none');
+  });
 
 
   $startButton.on('click', function(){
@@ -47,9 +59,10 @@ $(function(){
       timeRemaining--;
       console.log(timeRemaining);
       $timer.text(timeRemaining);
-      if(timeRemaining === 0){
+      if(timeRemaining <= 0){
         console.log('Stop counting down now please');
         clearInterval(countdown);
+        gameStarted = false;
       }
     }, 1000);
   }
@@ -94,19 +107,22 @@ $(function(){
   // highlight();
 
   function startGame(){
-    $scoreP1.textContent = 0;
-    timeUp = false;
-    tally = 0;
-    highlight();
-    countdown();
-    setTimeout(() => timeUp = true, 15000);
+    if(!gameStarted){
+      gameStarted = true;
+      $scoreP1.textContent = 0;
+      timeUp = false;
+      tally = 0;
+      highlight();
+      countdown();
+      setTimeout(() => timeUp = true, 15000);
+    }
+
+    console.log(timeUp);
+
   }
 
-  // function hit(e){
-  //   console.log(e, 'hit!');
-  //   tally++;
-  //   // insert the text here
-  // }
+
+
 
   // EVENT DELEGATION??
 
@@ -119,10 +135,6 @@ $(function(){
     $scoreP1.text(tally);
     // }
   });
-
-
-
-
 
   $resetBtn.on('click', function(){
     $scoreP1.textContent = 0;
@@ -137,6 +149,17 @@ $(function(){
 
 
 });
+
+
+// if(!timeUp){
+// $startButton.prop('disabled', true);
+// $startButton.prop('disabled', true);
+// } else if (timeUp){
+//   $startButton.prop('disabled', true);
+//can't get it to turn back on again
+// else {
+//   $startButton.prop('disabled', false);
+// }
 
 
 
@@ -173,6 +196,12 @@ $(function(){
 
 // }
 
+
+// function hit(e){
+//   console.log(e, 'hit!');
+//   tally++;
+//   // insert the text here
+// }
 
 // countdown function
 
