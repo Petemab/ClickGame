@@ -6439,7 +6439,7 @@ header {
   width: 100%;
   text-align: center; }
 
-#howModal {
+.modal {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -6457,30 +6457,30 @@ header {
   overflow: auto;
   /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.5); }
-  #howModal .modal-content {
+  .modal .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
     width: 50%; }
-    #howModal .modal-content .close {
+    .modal .modal-content .close {
       /* The Close Button */
       color: #aaaaaa;
       float: right;
       font-size: 28px;
       font-weight: bold; }
-    #howModal .modal-content .close:hover,
-    #howModal .modal-content .close:focus {
+    .modal .modal-content .close:hover,
+    .modal .modal-content .close:focus {
       color: #000;
       text-decoration: none;
       cursor: pointer; }
-    #howModal .modal-content .modal-header {
+    .modal .modal-content .modal-header {
       font-size: 50px;
       font-family: 'Orbitron', sans-serif;
       color: black;
       text-align: center; }
-    #howModal .modal-content .modal-words {
+    .modal .modal-content .modal-words {
       font-size: 25px;
       font-family: 'Orbitron', sans-serif;
       color: black; }

@@ -25,7 +25,7 @@ header {
   // background-color: green;
 }
 
-#howModal {
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -69,6 +69,7 @@ header {
 
   }
 }
+
 
 
 .left {
@@ -189,6 +190,52 @@ p {
     color: black;
   }
 }
+
+
+// #player1ready {
+//   display: none;
+//   position: fixed;
+//   z-index: 1;
+//   padding-top: 100px;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: auto;
+//   background-color: rgba(0,0,0,0.5);
+//   .modal-content {
+//       background-color: #fefefe;
+//       margin: auto;
+//       padding: 20px;
+//       border: 1px solid #888;
+//       border-radius: 10px;
+//       width: 50%;
+//       .close {
+//           color: #aaaaaa;
+//           float: right;
+//           font-size: 28px;
+//           font-weight: bold;
+//       }
+//       .close:hover,
+//       .close:focus {
+//           color: #000;
+//           text-decoration: none;
+//           cursor: pointer;
+//       }
+//       .modal-header {
+//         font-size: 50px;
+//         font-family: 'Orbitron', sans-serif;
+//         color: black;
+//         text-align:center;
+//       }
+//       .modal-words {
+//         font-size: 25px;
+//         font-family: 'Orbitron', sans-serif;
+//         color: black;
+//       }
+//
+//   }
+// }
 
 
 

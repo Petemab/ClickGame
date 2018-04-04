@@ -4,7 +4,7 @@ $(function(){
   //
   const $holes = $('.hole');
   const $scoreP1 = $('#scoreP1');
-  // const $scoreP2 = $('#scoreP2');
+  const $scoreP2 = $('#scoreP2');
   const $easy = $('#easy');
   const $medium = $('#medium');
   const $insane = $('#insane');
@@ -24,6 +24,11 @@ $(function(){
   const $howModal = $('#howModal');
   const $howToPlay = $('#howToPlay');
   const $close = $('.close');
+  const $player1Score = $('#player1Score');
+  const $p1ScoreDisplay = $('.p1ScoreDisplay');
+  const $player2Start = $('#player2Start');
+  const $player2Score = $('#player2Score');
+  const $p2ScoreDisplay = $('.p2ScoreDisplay');
 
   //pop up insruction screen
   $howToPlay.on('click', function(){
@@ -32,10 +37,16 @@ $(function(){
 
   $close.on('click', function(){
     $howModal.css('display', 'none');
+
   });
   //Start button
   $startButton.on('click', function(){
     startGame();
+  });
+
+  $player2Start.on('click', function(){
+    $player1Score.css('display', 'none');
+    startGame2();
   });
 
   //levels
@@ -113,14 +124,36 @@ $(function(){
       tally = 0;
       highlight();
       countdown();
-      setTimeout(() => timeUp = true, 15000);
+      setTimeout(() => {
+        timeUp = true;
+        $player1Score.css('display', 'block');
+        $p1ScoreDisplay.text(tally);
+      },15000);
     }
 
     console.log(timeUp);
 
   }
 
+  function startGame2(){
+    if(!gameStarted){
+      timeRemaining = 15;
+      gameStarted = true;
+      $scoreP2.textContent = 0;
+      timeUp = false;
+      tally = 0;
+      highlight();
+      countdown();
+      setTimeout(() => {
+        timeUp = true;
+        $player2Score.css('display', 'block');
+        $p2ScoreDisplay.text($scoreP2.textContent);
+      },15000);
+    }
 
+    console.log(timeUp);
+
+  }
 
 
   // EVENT DELEGATION??
@@ -137,6 +170,7 @@ $(function(){
 
   $resetBtn.on('click', function(){
     $scoreP1.textContent = 0;
+    $scoreP2.textContent = 0;
     timeUp = false;
     tally = 0;
     $scoreP1.text(tally);
