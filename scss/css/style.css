@@ -6441,21 +6441,14 @@ header {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.5); }
   .modal .modal-content {
     background-color: #fefefe;
@@ -6465,7 +6458,6 @@ header {
     border-radius: 10px;
     width: 50%; }
     .modal .modal-content .close {
-      /* The Close Button */
       color: #aaaaaa;
       float: right;
       font-size: 28px;
@@ -6478,12 +6470,16 @@ header {
     .modal .modal-content .modal-header {
       font-size: 50px;
       font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
       color: black;
       text-align: center; }
     .modal .modal-content .modal-words {
       font-size: 25px;
       font-family: 'Orbitron', sans-serif;
-      color: black; }
+      color: black;
+      text-align: center; }
+    .modal .modal-content .modal-button {
+      margin: inherit; }
 
 .left {
   width: 100px; }

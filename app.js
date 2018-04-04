@@ -1,6 +1,5 @@
 $(function(){
 
-
   //
   const $holes = $('.hole');
   const $scoreP1 = $('#scoreP1');
@@ -19,6 +18,8 @@ $(function(){
   let timeRemaining = 15;
   let time;
   let gameStarted = false;
+  let startGame1 = false;
+  // const startGame2 = false;
   // let timerValue = null;
   // let timeIsRunning = false;
   const $howModal = $('#howModal');
@@ -29,6 +30,8 @@ $(function(){
   const $player2Start = $('#player2Start');
   const $player2Score = $('#player2Score');
   const $p2ScoreDisplay = $('.p2ScoreDisplay');
+  const $playAgain = $('.playAgain');
+  const $winner = $('.winner');
 
   //pop up insruction screen
   $howToPlay.on('click', function(){
@@ -47,6 +50,10 @@ $(function(){
   $player2Start.on('click', function(){
     $player1Score.css('display', 'none');
     startGame2();
+  });
+
+  $playAgain.on('click', function(){
+    $player2Score.css('display', 'none');
   });
 
   //levels
@@ -119,7 +126,8 @@ $(function(){
   function startGame(){
     if(!gameStarted){
       gameStarted = true;
-      $scoreP1.textContent = 0;
+      startGame1 = true;
+      $scoreP1.text(0);
       timeUp = false;
       tally = 0;
       highlight();
@@ -138,8 +146,9 @@ $(function(){
   function startGame2(){
     if(!gameStarted){
       timeRemaining = 15;
+      startGame1 = false;
       gameStarted = true;
-      $scoreP2.textContent = 0;
+      $scoreP2.text(0);
       timeUp = false;
       tally = 0;
       highlight();
@@ -147,7 +156,14 @@ $(function(){
       setTimeout(() => {
         timeUp = true;
         $player2Score.css('display', 'block');
-        $p2ScoreDisplay.text($scoreP2.textContent);
+        $p2ScoreDisplay.text(tally);
+        if ($scoreP1 === $scoreP2){
+          $winner.text('It\'s a draw!');
+        } else if ($scoreP1 > $scoreP2){
+          $winner.text('Player 1 wins! You lose player 2!');
+        } else {
+          $winner.text('Player 2 wins! You lose player 1!');
+        }
       },15000);
     }
 
@@ -158,14 +174,16 @@ $(function(){
 
   // EVENT DELEGATION??
 
-  $('.game').on('click', '.highlightedHole',  function(e) {
-    console.log('click on highlight');
-    console.log(e);
-    // if($holes.hasClass($highlightedHole)){
-    tally++;
-    console.log(tally);
-    $scoreP1.text(tally);
-    // }
+  $('.game').on('click', '.highlightedHole',  function() {
+    if(startGame1){
+      tally++;
+      console.log(tally);
+      $scoreP1.text(tally);
+    } else {
+      tally++;
+      $scoreP2.text(tally);
+    }
+
   });
 
   $resetBtn.on('click', function(){
@@ -174,6 +192,7 @@ $(function(){
     timeUp = false;
     tally = 0;
     $scoreP1.text(tally);
+    $scoreP2.text(tally);
     difficulty = '';
     timeRemaining = 15;
     $timer.text(timeRemaining);
