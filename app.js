@@ -33,10 +33,16 @@ $(function(){
   const $p2ScoreDisplay = $('.p2ScoreDisplay');
   const $playAgain = $('.playAgain');
   const $winner = $('.winner');
+  const $bomb = new Audio('./sfx/explosion.mp3');
+  const $laser = new Audio('./sfx/Laser.mp3');
+
+
+
 
   //pop up insruction screen
   $howToPlay.on('click', function(){
     $howModal.css('display', 'block');
+    $laser.play();
   });
 
   $close.on('click', function(){
@@ -71,6 +77,7 @@ $(function(){
     console.log(difficulty);
 
   });
+
 
   function countdown(){
     const countdown = setInterval(function() {
@@ -127,6 +134,9 @@ $(function(){
 
   function startGame(){
     if(!gameStarted){
+      $('.game').on('click', function(){
+        $laser.play();
+      });
       gameStarted = true;
       startGame1 = true;
       $scoreP1.text(0);
@@ -147,6 +157,9 @@ $(function(){
 
   function startGame2(){
     if(!gameStarted){
+      $('.game').on('click', function(){
+        $laser.play();
+      });
       timeRemaining = 15;
       startGame1 = false;
       gameStarted = true;
@@ -181,9 +194,11 @@ $(function(){
       tally++;
       console.log(tally);
       $scoreP1.text(tally);
+      $bomb.play();
     } else {
       tally++;
       $scoreP2.text(tally);
+      $bomb.play();
     }
   });
 
