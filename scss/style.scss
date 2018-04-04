@@ -37,23 +37,23 @@ header {
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
   .modal-content {
-      background-color: #fefefe;
+      background-color: rgba(244, 244, 244, 0.6);
       margin: auto;
       padding: 20px;
       border: 1px solid #888;
       border-radius: 10px;
       width: 50%;
       .close {
-          color: #aaaaaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
       }
       .close:hover,
       .close:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
       }
       .modal-header {
         font-size: 50px;
@@ -68,13 +68,19 @@ header {
         color: black;
         text-align: center;
       }
+      span {
+        font-weight: bold;
+        font-size: 35px;
+      }
       .modal-button {
-        margin: inherit;
-
+        position: relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
       }
 
   }
 }
+
 
 
 .left {
@@ -89,7 +95,7 @@ header {
   }
   #howToPlay {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 10px;
     display: block;
     text-align: center;

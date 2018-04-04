@@ -19,6 +19,7 @@ $(function(){
   let time;
   let gameStarted = false;
   let startGame1 = false;
+  // let reset = false;
   // const startGame2 = false;
   // let timerValue = null;
   // let timeIsRunning = false;
@@ -82,6 +83,7 @@ $(function(){
         gameStarted = false;
       }
     }, 1000);
+
   }
 
   // random time generator
@@ -160,9 +162,9 @@ $(function(){
         if ($scoreP1 === $scoreP2){
           $winner.text('It\'s a draw!');
         } else if ($scoreP1 > $scoreP2){
-          $winner.text('Player 1 wins! You lose player 2!');
+          $winner.text('Player 1 wins! You need more practice Player 2');
         } else {
-          $winner.text('Player 2 wins! You lose player 1!');
+          $winner.text('Player 2 wins! You need more practice Player 1');
         }
       },15000);
     }
@@ -183,19 +185,20 @@ $(function(){
       tally++;
       $scoreP2.text(tally);
     }
-
   });
 
   $resetBtn.on('click', function(){
-    $scoreP1.textContent = 0;
-    $scoreP2.textContent = 0;
-    timeUp = false;
-    tally = 0;
-    $scoreP1.text(tally);
-    $scoreP2.text(tally);
-    difficulty = '';
-    timeRemaining = 15;
-    $timer.text(timeRemaining);
+    location.reload();
+    // // reset = true;
+    // timeUp = false;
+    // tally = 0;
+    // $scoreP1.text(tally);
+    // $scoreP2.text(tally);
+    // difficulty = '';
+    // timeRemaining = 15;
+    // startGame1 = false;
+    // gameStarted = false;
+    // $timer.text(timeRemaining);
   });
 
 
