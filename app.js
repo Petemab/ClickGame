@@ -35,7 +35,7 @@ $(function(){
   // autoplays background music.
   $('#backgroundMusic').get(0).play();
 
-  //mustes all music
+  //mutes all music but not sound effects
   $('.mute').on('click', function(){
     $('#backgroundMusic').get(0).pause();
   });

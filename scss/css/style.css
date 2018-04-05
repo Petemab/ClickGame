@@ -6439,6 +6439,10 @@ header {
   width: 100%;
   text-align: center; }
 
+.game {
+  border-top: white 2px solid;
+  border-bottom: white 2px solid; }
+
 .modal {
   display: none;
   position: fixed;
