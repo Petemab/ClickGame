@@ -4,13 +4,17 @@
 @import "bulma/bulma.scss";
 
 
+
+$font-family: 'Orbitron', sans-serif;
+$lightBoxShadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
+
 // * {
 //   border: red solid 1px;
 // }
 
 html{
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family;
 }
 
 body {
@@ -22,7 +26,7 @@ header {
   height: 200px;
   width: 100%;
   text-align: center;
-  // background-color: green;
+
 }
 
 .modal {
@@ -51,20 +55,20 @@ header {
       }
       .close:hover,
       .close:focus {
-        color: #000;
+        color: black;
         text-decoration: none;
         cursor: pointer;
       }
       .modal-header {
         font-size: 50px;
-        font-family: 'Orbitron', sans-serif;
+        font-family: $font-family;
         font-weight: bold;
         color: black;
         text-align:center;
       }
       .modal-words {
         font-size: 25px;
-        font-family: 'Orbitron', sans-serif;
+        font-family: $font-family;
         color: black;
         text-align: center;
       }
@@ -80,7 +84,6 @@ header {
 
   }
 }
-
 
 
 .left {
@@ -102,7 +105,7 @@ header {
     color: white;
     padding-top: 9px;
     border: white, solid, 5px;
-    box-shadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
+    box-shadow: $lightBoxShadow;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.2);
   }
@@ -120,14 +123,14 @@ header {
     color: white;
     padding-top: 9px;
     border: white, solid, 5px;
-    box-shadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
+    box-shadow: $lightBoxShadow;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
 button {
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family;
   height: 60px;
   font-size: 30px;
   text-align: center;
@@ -168,7 +171,7 @@ button {
 
 h1 {
   font-size: 100px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family;
   color: white;
   text-align:center;
   line-height:200px;
@@ -178,14 +181,14 @@ h1 {
 
 h2 {
   font-size: 50px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family;
   color: black;
   text-align:center;
 }
 
 p {
   font-size: 50px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: $font-family;
   color: black;
 }
 
@@ -194,7 +197,7 @@ p {
   margin-bottom: 5px;
   p:nth-child(odd){
     font-size: 25px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: $font-family;
     color: black;
   }
 }
@@ -202,28 +205,45 @@ p {
 
 .footer {
   width: 100%;
-  height: 20px;
-  background-color: red;
-    // p{
-    //   margin-left: 20px;
-    //   font-size: 15px;
-    //   color: white;
-    //   float: left;
-    //   padding: 5px;
-    //   box-shadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
-    //   border-radius: 10px;
-    //   background-color: rgba(244, 244, 244, 0.2);
-    // }
-    // .contacts {
-    //   margin-right: 20px;
-    //   font-family: 'Orbitron', sans-serif;
-    //   font-size: 15px;
-    //   float: right;
-    //   padding: 5px;
-    //   box-shadow: 4px 4px 12px 0px rgba(244,244,244,0.75);
-    //   border-radius: 10px;
-    //   background-color: rgba(244, 244, 244, 0.2);
-    // }
+  background-color: inherit;
+  padding-bottom: 25px;
+  .columns{
+    padding-top: 50px;
+  }
+    .message{
+      display: inline-block;
+      text-align: center;
+      margin-left: 20px;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      box-shadow: $lightBoxShadow;
+      border-radius: 10px;
+      background-color: rgba(244, 244, 244, 0.2);
+    }
+    .contacts {
+      display: inline-block;
+      font-weight:bold;
+      text-align: center;
+      margin-right: 20px;
+      font-family: $font-family;
+      color: white;
+      font-size: 15px;
+      padding: 5px;
+      box-shadow: $lightBoxShadow;
+      border-radius: 10px;
+      background-color: rgba(244, 244, 244, 0.2);
+      a{
+        text-decoration: none;
+      }
+      p{
+        display: inline-block;
+        font-family: $font-family;
+        color: white;
+        font-size: 15px;
+      }
+    }
 
 }
 

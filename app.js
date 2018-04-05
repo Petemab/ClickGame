@@ -33,6 +33,10 @@ $(function(){
   let startGame1 = false;
 
 
+  // $('#backgroundMusic').get(0).play();
+
+
+
   //pop up insruction screen
   $howToPlay.on('click', function(){
     $howModal.css('display', 'block');
@@ -50,6 +54,7 @@ $(function(){
     $('.game').on('click', function(){
       $laser.play();
     });
+    $('.game').css('cursor', 'crosshair');
   });
 
   //Starts player 2 games and closes the pop up modal with P1 score
