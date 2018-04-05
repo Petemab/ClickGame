@@ -6593,7 +6593,8 @@ p {
 .footer {
   width: 100%;
   background-color: inherit;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-top: 20px; }
   .footer .columns {
     padding-top: 50px; }
     .footer .columns .mute {
