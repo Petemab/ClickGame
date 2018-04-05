@@ -32,10 +32,12 @@ $(function(){
   let gameStarted = false;
   let startGame1 = false;
 
+  // autoplays background music.
+  $('#backgroundMusic').get(0).play();
 
-  // $('#backgroundMusic').get(0).play();
-
-
+  $('.mute').on('click', function(){
+    $('#backgroundMusic').get(0).pause();
+  });
 
   //pop up insruction screen
   $howToPlay.on('click', function(){

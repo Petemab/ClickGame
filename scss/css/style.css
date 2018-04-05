@@ -6485,6 +6485,8 @@ header {
       position: relative;
       margin-left: 50%;
       transform: translateX(-50%); }
+      .modal .modal-content .modal-button:focus {
+        outline: 0; }
 
 .left {
   width: 100px; }
@@ -6522,6 +6524,8 @@ header {
     box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.2); }
+    .left .difficulty button:focus {
+      outline: 0; }
 
 button {
   font-family: "Orbitron", sans-serif;
@@ -6534,6 +6538,8 @@ button {
   border-radius: 10px;
   background-color: rgba(244, 244, 244, 0.2);
   font-weight: bold; }
+  button:focus {
+    outline: 0; }
 
 .right {
   width: 100px; }
@@ -6587,39 +6593,54 @@ p {
 .footer {
   width: 100%;
   background-color: inherit;
-  padding-bottom: 25px; }
+  padding-bottom: 30px; }
   .footer .columns {
     padding-top: 50px; }
-  .footer .message {
-    display: inline-block;
-    text-align: center;
-    margin-left: 20px;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
-    box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
-    border-radius: 10px;
-    background-color: rgba(244, 244, 244, 0.2); }
-  .footer .contacts {
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 20px;
-    font-family: "Orbitron", sans-serif;
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
-    border-radius: 10px;
-    background-color: rgba(244, 244, 244, 0.2); }
-    .footer .contacts a {
-      text-decoration: none; }
-    .footer .contacts p {
+    .footer .columns .mute {
+      margin-right: 20px;
+      height: 32px;
       display: inline-block;
+      text-align: center;
+      margin-left: 20px;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
+      border-radius: 10px;
+      background-color: rgba(244, 244, 244, 0.2); }
+      .footer .columns .mute:focus {
+        outline: 0; }
+    .footer .columns .message {
+      display: inline-block;
+      text-align: center;
+      margin-left: 20px;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
+      border-radius: 10px;
+      background-color: rgba(244, 244, 244, 0.2); }
+    .footer .columns .contacts {
+      display: inline-block;
+      font-weight: bold;
+      text-align: center;
+      margin-right: 20px;
       font-family: "Orbitron", sans-serif;
       color: white;
-      font-size: 15px; }
+      font-size: 15px;
+      padding: 5px;
+      box-shadow: 4px 4px 12px 0px rgba(244, 244, 244, 0.75);
+      border-radius: 10px;
+      background-color: rgba(244, 244, 244, 0.2); }
+      .footer .columns .contacts a {
+        text-decoration: none; }
+      .footer .columns .contacts p {
+        display: inline-block;
+        font-family: "Orbitron", sans-serif;
+        color: white;
+        font-size: 15px; }
 
 @keyframes shake {
   10%, 90% {
