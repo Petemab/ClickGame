@@ -18,6 +18,11 @@
 * Git
 * Github
 
+
+##Play Here:
+https://petemab.github.io/ClickGame/
+
+
 ##Game Instructions
 
  'Shooty Spaceballs' is essentially a twist on the traditional Whack-a-Mole game.
