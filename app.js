@@ -31,8 +31,7 @@ $(function(){
   let time;
   let gameStarted = false;
   let startGame1 = false;
-  let gameTimeout;
-  let gameTimeout2;
+
 
   // autoplays background music.
   $('#backgroundMusic').get(0).play();
@@ -141,7 +140,7 @@ $(function(){
       p1Score = 0;
       highlight();
       countdown();
-      gameTimeout = setTimeout(() => {
+      setTimeout(() => {
         timeUp = true;
         $player1PopUp.css('display', 'block');
         $p1ScoreDisplay.text(p1Score);
@@ -166,7 +165,7 @@ $(function(){
 
   // finds the winner once the set time out is complete
   function findWinner(){
-    gameTimeout2 = setTimeout(() => {
+    setTimeout(() => {
       timeUp = true;
       $player2PopUp.css('display', 'block');
       $p2ScoreDisplay.text(p2Score);
@@ -196,16 +195,35 @@ $(function(){
 
   //Reset button. Just reloads the page. I broke it repeatedly trying to reset properly!
   $resetBtn.on('click', function(){
-
-
-    // location.reload();
+    location.reload();
   });
 
 });
 
 
 
+//Reset Button work in progress below:
 
+// let gameTimeout;
+// let gameTimeout2;
+// let stopHighlighting;
+// gameTimeout2 =
+// gameTimeout =
+// let stopHighlighting = 
+//
+// clearInterval(countdown);
+// clearTimeout(gameTimeout);
+// clearTimeout(gameTimeout2);
+// clearTimeout(stopHighlighting);
+// startGame1 = false;
+// gameStarted = false;
+// $scoreP2.text(0);
+// $scoreP1.text(0);
+// p1Score = 0;
+// p2Score = 0;
+// difficulty = '';
+// timeRemaining = 15;
+// reset = true;
 
 
 

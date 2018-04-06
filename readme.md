@@ -59,7 +59,7 @@ Once I had decided on the space theme and added a background image, futuristic f
 
 ##What I Learned
 
-* In retrospect I could have taken on a more challenging project even thought I was pleased with the end result. It works and looks ok! It **vastly** improved my understanding of the entire process and my JavaScript and styling particularly took a massive leap. It helped me realise how much I'd learnt.
+* In retrospect I could have taken on a more challenging project even thought I was satisfied with the end result. It works and looks ok! It **vastly** improved my understanding of the entire process and my JavaScript and styling particularly took a massive leap. It helped me realise how much I'd learnt.
 
 * Certain problems, such as making it two player and getting the timers to work correctly seem to take forever, but once I'd worked them out they seemed very logical. I realised that sometimes staring at the screen for 6 hours stright is not always the way to solve a problem.
 
