@@ -18,6 +18,7 @@
 * Git
 * Github
 
+---
 
 ## Play Here:
 https://petemab.github.io/ClickGame/
@@ -49,25 +50,26 @@ https://petemab.github.io/ClickGame/
 
  * Once player one has completed their game their score is displayed and player two's game begins. Once this is complete a screen displays the winner.
 
+---
 
-## Development
+### Challenges and Problems
 
-My aim was to keep the game fairly simple - I wanted to ensure I had a functioning game by the end of the project that mixed the skills we had been studying during the first part of the course.
+* Certain problems, such as making it two player and getting the timers to work correctly seem to take forever, but once I'd worked them out they seemed very logical. I realised that sometimes taking a step back from a problem and coming back to it is often more productive than staring at the screen for 6 hours straight!
 
-I tried to mix a bit of everything into it, to help consolidate my learning so far - hence I used jQuery, a Bulma framework, SASS, CSS animation and HTML Audio.
+* Planning out the logic took a couple of days. After struggling for the first 24 hours it became much clearer and everything flowed from then on. With more concise planning and a more focused approach - as well as allowing sufficient time for styling - my next project will flow even better.
 
-Planning out the logic took a couple of days. After struggling for the first 24 hours it became much clearer and everything flowed from then on.
+---
 
-It was very useful seeing the numerous other similar games on line and how they had (often very differently) approached the game logic.
+### Wins
 
-Once I had decided on the space theme and added a background image, futuristic font and couple of sfx it lifted the fairly straightforward gameplay.
+* It **vastly** improved my understanding of the entire process and my JavaScript and styling particularly took a massive leap. It helped me realise how much I'd learnt.
 
-## What I Learned
+* I managed to mix a bit of everything into it, to help consolidate my learning so far - hence I used jQuery, a Bulma framework, SASS, CSS animation and HTML Audio.
 
-* In retrospect I could have taken on a more challenging project even thought I was satisfied with the end result. It works and looks ok! It **vastly** improved my understanding of the entire process and my JavaScript and styling particularly took a massive leap. It helped me realise how much I'd learnt.
+* Once I had decided on the space theme and added a background image, futuristic font and couple of sfx it lifted the gameplay.
 
-* Certain problems, such as making it two player and getting the timers to work correctly seem to take forever, but once I'd worked them out they seemed very logical. I realised that sometimes staring at the screen for 6 hours straight is not always the way to solve a problem.
+---
 
-* I would have liked to have made it responsive and also ensure the reset button reset without refreshing (especially once I added the fairly irritating background music  - despite the mute button).
+### Future Features
 
-* Hopefully with more concise planning and a more focused approach - as well as allowing sufficient time for styling, my next project will flow even better.
+* I would have liked to have made it responsive and also ensure the reset button reset without refreshing.
