@@ -41,7 +41,7 @@ $(function(){
     $('#backgroundMusic').get(0).pause();
   });
 
-  //pop up insruction screen
+  //pop up instruction screen
   $howToPlay.on('click', function(){
     $howModal.css('display', 'block');
     $laser.play();
@@ -209,7 +209,7 @@ $(function(){
 // let stopHighlighting;
 // gameTimeout2 =
 // gameTimeout =
-// let stopHighlighting = 
+// let stopHighlighting =
 //
 // clearInterval(countdown);
 // clearTimeout(gameTimeout);
@@ -251,57 +251,3 @@ $(function(){
 // else {
 //   $startButton.prop('disabled', false);
 // }
-
-
-
-// changes colour of the circles when clicked
-// $holes.on('click', function() {
-//   $(this).css('background', 'grey');
-// });
-//
-// // randomly selects a circle
-// $startButton.on('click', function() {
-//   setTimeout(function(){
-//     console.log('Time\'s Up!');
-//   }, 5000);
-// });
-//
-// $startButton.on('click', function() {
-//   setInterval(function() {
-//     const index = Math.floor(Math.random() * $holes.length);
-//     const selectedHole = $holes[index];
-//     console.log(selectedHole);
-//     //below control the length of time
-//   }, randomTime(300, 900));
-// });
-// $(selectedHole).css('background', 'orange');
-//
-// const $holes = ('hole')
-//
-// //random time function
-// function randonTime(min, max){
-//  return Math.round(Math.random() * (max - min) + min)
-
-//
-//
-
-// }
-
-
-// function hit(e){
-//   console.log(e, 'hit!');
-//   tally++;
-//   // insert the text here
-// }
-
-// countdown function
-
-// $startButton.on('click', setInterval(function(){
-//
-//   const index = Math.floor(Math.random() * $holes.length);
-//
-//   const selectedHole = $holes[index];
-//
-//   $(selectedHole).css('background', 'orange');
-//
-// }, 500));
